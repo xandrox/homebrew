@@ -20,11 +20,11 @@ class Forge < Formula
     
     inreplace "#{libexec}/bin/forge",
       "#   JAVA_HOME - location of a JRE home directory",
-      "export JAVA_HOME=\"$(/usr/libexec/java_home)\""
+      "JAVA_HOME=\"$(/usr/libexec/java_home)\""
     
     inreplace "#{libexec}/bin/forge",
         "#   FORGE_HOME - location of Forge's installed home dir",
-        "export FORGE_HOME=\"#{libexec}\""
+        "FORGE_HOME=\"#{libexec}\""
       
       #   FORGE_HOME - location of Forge's installed home dir
   end
